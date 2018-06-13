@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.opilane.rulett.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/KEERUTA" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/iv_wheel"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_wheel"
+        android:contentDescription="@string/todo1" />
+
+    <ImageView
+        android:id="@+id/pointer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/iv_wheel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_pointer"
+        android:contentDescription="@string/todo2" />
+</RelativeLayout>
